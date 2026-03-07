@@ -475,7 +475,11 @@ body.dark .chip[data-value="flying"] {
 .chip[data-value="fairy"].active,
 .chip[data-value="ground"].active,
 .chip[data-value="steel"].active,
-.chip[data-value="normal"].active {
+.chip[data-value="normal"].active,
+.chip[data-value="bug"].active,
+.chip[data-value="rock"].active,
+.chip[data-value="flying"].active,
+.chip[data-value="grass"].active {
     color: #333;
 }
 
