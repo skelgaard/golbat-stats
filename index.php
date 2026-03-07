@@ -145,7 +145,7 @@ $html = '
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta http-equiv="refresh" content="600">
-    <link rel="stylesheet" href="./styles.css?v=11" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Live shiny stats for Pokémon Go</title>
 </head>
 <body class="dark-changer ' . ($isDark ? "dark" : "") . '">
@@ -311,7 +311,7 @@ $html .= '</tbody>
     </div>
     <div id="mobile-list"></div>
     <div id="footer"></div>
-    <script src="./javascript.js?v=11"></script>
+    <script src="./javascript.js"></script>
 </body>
 </html>
 ';
