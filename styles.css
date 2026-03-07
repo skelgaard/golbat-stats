@@ -529,19 +529,13 @@ body.dark .chip[data-value="grass"].active,
     .filter-row { flex-direction: column; }
     .filter-label { text-align: left; min-width: auto; }
     .filter-chips {
-        flex-wrap: wrap;
-        max-height: 90px;
-        overflow-y: auto;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        padding-right: 4px;
+        touch-action: pan-x;
+        padding-bottom: 4px;
     }
-    .filter-chips::-webkit-scrollbar {
-        width: 3px;
-    }
-    .filter-chips::-webkit-scrollbar-thumb {
-        background: rgba(255,255,255,0.2);
-        border-radius: 3px;
-    }
+    .filter-chips::-webkit-scrollbar { display: none; }
 }
 
 /* Data table */
