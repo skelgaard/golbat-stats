@@ -447,6 +447,25 @@ body.dark .chip[data-value="flying"] {
     background: color-mix(in srgb, var(--type-color) 15%, transparent);
 }
 
+/* All type chips: active base style */
+body.dark .chip[data-value="fire"].active,
+body.dark .chip[data-value="water"].active,
+body.dark .chip[data-value="grass"].active,
+body.dark .chip[data-value="electric"].active,
+body.dark .chip[data-value="rock"].active,
+body.dark .chip[data-value="ground"].active,
+body.dark .chip[data-value="psychic"].active,
+body.dark .chip[data-value="dark"].active,
+body.dark .chip[data-value="fairy"].active,
+body.dark .chip[data-value="dragon"].active,
+body.dark .chip[data-value="steel"].active,
+body.dark .chip[data-value="ice"].active,
+body.dark .chip[data-value="bug"].active,
+body.dark .chip[data-value="ghost"].active,
+body.dark .chip[data-value="normal"].active,
+body.dark .chip[data-value="fighting"].active,
+body.dark .chip[data-value="poison"].active,
+body.dark .chip[data-value="flying"].active,
 .chip[data-value="fire"].active,
 .chip[data-value="water"].active,
 .chip[data-value="grass"].active,
@@ -470,16 +489,7 @@ body.dark .chip[data-value="flying"] {
     color: #fff;
 }
 
-.chip[data-value="electric"].active,
-.chip[data-value="ice"].active,
-.chip[data-value="fairy"].active,
-.chip[data-value="ground"].active,
-.chip[data-value="steel"].active,
-.chip[data-value="normal"].active,
-.chip[data-value="bug"].active,
-.chip[data-value="rock"].active,
-.chip[data-value="flying"].active,
-.chip[data-value="grass"].active,
+/* Light type chips: dark text for readability */
 body.dark .chip[data-value="electric"].active,
 body.dark .chip[data-value="ice"].active,
 body.dark .chip[data-value="fairy"].active,
@@ -489,7 +499,17 @@ body.dark .chip[data-value="normal"].active,
 body.dark .chip[data-value="bug"].active,
 body.dark .chip[data-value="rock"].active,
 body.dark .chip[data-value="flying"].active,
-body.dark .chip[data-value="grass"].active {
+body.dark .chip[data-value="grass"].active,
+.chip[data-value="electric"].active,
+.chip[data-value="ice"].active,
+.chip[data-value="fairy"].active,
+.chip[data-value="ground"].active,
+.chip[data-value="steel"].active,
+.chip[data-value="normal"].active,
+.chip[data-value="bug"].active,
+.chip[data-value="rock"].active,
+.chip[data-value="flying"].active,
+.chip[data-value="grass"].active {
     color: #333;
 }
 
