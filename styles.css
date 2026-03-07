@@ -534,6 +534,7 @@ body.dark .chip[data-value="grass"].active,
         -webkit-overflow-scrolling: touch;
         touch-action: pan-x;
         padding-bottom: 4px;
+        max-width: calc(100vw - 32px);
     }
     .filter-chips::-webkit-scrollbar { display: none; }
 }
