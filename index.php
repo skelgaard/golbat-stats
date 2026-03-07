@@ -111,21 +111,7 @@ function getGenName($pokemonId, $generations) {
 function getPokemonTypes($pokemonId, $data) {
     if (!empty($data['pokemon'][$pokemonId]['types'])) {
         $types = $data['pokemon'][$pokemonId]['types'];
-        return implode(',', array_map(function($t) {
-            $typeNames = [
-                1 => 'normal', 2 => 'fighting', 3 => 'flying', 4 => 'poison',
-                5 => 'ground', 6 => 'rock', 7 => 'bug', 8 => 'ghost',
-                9 => 'steel', 10 => 'fire', 11 => 'water', 12 => 'grass',
-                13 => 'electric', 14 => 'psychic', 15 => 'ice', 16 => 'dragon',
-                17 => 'dark', 18 => 'fairy'
-            ];
-            if (is_array($t)) {
-                $typeId = $t['typeId'] ?? ($t['type_id'] ?? 0);
-            } else {
-                $typeId = (int)$t;
-            }
-            return $typeNames[$typeId] ?? '';
-        }, $types));
+        return implode(',', array_map('strtolower', $types));
     }
     return '';
 }
