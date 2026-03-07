@@ -479,7 +479,17 @@ body.dark .chip[data-value="flying"] {
 .chip[data-value="bug"].active,
 .chip[data-value="rock"].active,
 .chip[data-value="flying"].active,
-.chip[data-value="grass"].active {
+.chip[data-value="grass"].active,
+body.dark .chip[data-value="electric"].active,
+body.dark .chip[data-value="ice"].active,
+body.dark .chip[data-value="fairy"].active,
+body.dark .chip[data-value="ground"].active,
+body.dark .chip[data-value="steel"].active,
+body.dark .chip[data-value="normal"].active,
+body.dark .chip[data-value="bug"].active,
+body.dark .chip[data-value="rock"].active,
+body.dark .chip[data-value="flying"].active,
+body.dark .chip[data-value="grass"].active {
     color: #333;
 }
 
