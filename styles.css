@@ -526,7 +526,7 @@ body.dark .chip[data-value="grass"].active,
 }
 
 @media (max-width: 575.98px) {
-    .filter-row { flex-direction: column; }
+    .filter-row { flex-direction: column; position: relative; }
     .filter-label { text-align: left; min-width: auto; }
     .filter-chips {
         flex-wrap: nowrap;
@@ -535,6 +535,8 @@ body.dark .chip[data-value="grass"].active,
         touch-action: pan-x;
         padding-bottom: 4px;
         max-width: calc(100vw - 32px);
+        mask-image: linear-gradient(to right, black calc(100% - 40px), transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, black calc(100% - 40px), transparent 100%);
     }
     .filter-chips::-webkit-scrollbar { display: none; }
 }
