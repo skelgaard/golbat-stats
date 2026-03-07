@@ -363,6 +363,122 @@ body.dark .chip:hover {
     border-color: var(--accent);
 }
 
+/* Pokémon type colors */
+.chip[data-value="fire"]     { --type-color: #F08030; }
+.chip[data-value="water"]    { --type-color: #6890F0; }
+.chip[data-value="grass"]    { --type-color: #78C850; }
+.chip[data-value="electric"] { --type-color: #F8D030; }
+.chip[data-value="rock"]     { --type-color: #B8A038; }
+.chip[data-value="ground"]   { --type-color: #E0C068; }
+.chip[data-value="psychic"]  { --type-color: #F85888; }
+.chip[data-value="dark"]     { --type-color: #705848; }
+.chip[data-value="fairy"]    { --type-color: #EE99AC; }
+.chip[data-value="dragon"]   { --type-color: #7038F8; }
+.chip[data-value="steel"]    { --type-color: #B8B8D0; }
+.chip[data-value="ice"]      { --type-color: #98D8D8; }
+.chip[data-value="bug"]      { --type-color: #A8B820; }
+.chip[data-value="ghost"]    { --type-color: #705898; }
+.chip[data-value="normal"]   { --type-color: #A8A878; }
+.chip[data-value="fighting"] { --type-color: #C03028; }
+.chip[data-value="poison"]   { --type-color: #A040A0; }
+.chip[data-value="flying"]   { --type-color: #A890F0; }
+
+.chip[data-value="fire"],
+.chip[data-value="water"],
+.chip[data-value="grass"],
+.chip[data-value="electric"],
+.chip[data-value="rock"],
+.chip[data-value="ground"],
+.chip[data-value="psychic"],
+.chip[data-value="dark"],
+.chip[data-value="fairy"],
+.chip[data-value="dragon"],
+.chip[data-value="steel"],
+.chip[data-value="ice"],
+.chip[data-value="bug"],
+.chip[data-value="ghost"],
+.chip[data-value="normal"],
+.chip[data-value="fighting"],
+.chip[data-value="poison"],
+.chip[data-value="flying"] {
+    border-color: var(--type-color);
+    color: var(--type-color);
+}
+
+body.dark .chip[data-value="fire"],
+body.dark .chip[data-value="water"],
+body.dark .chip[data-value="grass"],
+body.dark .chip[data-value="electric"],
+body.dark .chip[data-value="rock"],
+body.dark .chip[data-value="ground"],
+body.dark .chip[data-value="psychic"],
+body.dark .chip[data-value="dark"],
+body.dark .chip[data-value="fairy"],
+body.dark .chip[data-value="dragon"],
+body.dark .chip[data-value="steel"],
+body.dark .chip[data-value="ice"],
+body.dark .chip[data-value="bug"],
+body.dark .chip[data-value="ghost"],
+body.dark .chip[data-value="normal"],
+body.dark .chip[data-value="fighting"],
+body.dark .chip[data-value="poison"],
+body.dark .chip[data-value="flying"] {
+    color: var(--type-color);
+}
+
+.chip[data-value="fire"]:hover,
+.chip[data-value="water"]:hover,
+.chip[data-value="grass"]:hover,
+.chip[data-value="electric"]:hover,
+.chip[data-value="rock"]:hover,
+.chip[data-value="ground"]:hover,
+.chip[data-value="psychic"]:hover,
+.chip[data-value="dark"]:hover,
+.chip[data-value="fairy"]:hover,
+.chip[data-value="dragon"]:hover,
+.chip[data-value="steel"]:hover,
+.chip[data-value="ice"]:hover,
+.chip[data-value="bug"]:hover,
+.chip[data-value="ghost"]:hover,
+.chip[data-value="normal"]:hover,
+.chip[data-value="fighting"]:hover,
+.chip[data-value="poison"]:hover,
+.chip[data-value="flying"]:hover {
+    background: color-mix(in srgb, var(--type-color) 15%, transparent);
+}
+
+.chip[data-value="fire"].active,
+.chip[data-value="water"].active,
+.chip[data-value="grass"].active,
+.chip[data-value="electric"].active,
+.chip[data-value="rock"].active,
+.chip[data-value="ground"].active,
+.chip[data-value="psychic"].active,
+.chip[data-value="dark"].active,
+.chip[data-value="fairy"].active,
+.chip[data-value="dragon"].active,
+.chip[data-value="steel"].active,
+.chip[data-value="ice"].active,
+.chip[data-value="bug"].active,
+.chip[data-value="ghost"].active,
+.chip[data-value="normal"].active,
+.chip[data-value="fighting"].active,
+.chip[data-value="poison"].active,
+.chip[data-value="flying"].active {
+    background: var(--type-color);
+    border-color: var(--type-color);
+    color: #fff;
+}
+
+.chip[data-value="electric"].active,
+.chip[data-value="ice"].active,
+.chip[data-value="fairy"].active,
+.chip[data-value="ground"].active,
+.chip[data-value="steel"].active,
+.chip[data-value="normal"].active {
+    color: #333;
+}
+
 .chip-clear {
     font-size: 11px;
     opacity: 0;
