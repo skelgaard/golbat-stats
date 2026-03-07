@@ -30,7 +30,22 @@ function applyFilters() {
     });
 
     updateSearchCount();
+    restripeRows();
     buildMobileList();
+}
+
+function restripeRows() {
+    const rows = document.querySelectorAll('#statstable tbody tr');
+    let i = 0;
+    rows.forEach(row => {
+        if (row.style.display === 'none') {
+            row.classList.remove('row-even', 'row-odd');
+            return;
+        }
+        row.classList.toggle('row-even', i % 2 === 1);
+        row.classList.toggle('row-odd', i % 2 === 0);
+        i++;
+    });
 }
 
 function updateSearchCount() {

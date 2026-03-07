@@ -484,11 +484,11 @@ body.dark #statstable tbody tr {
     border-bottom-color: rgba(255,255,255,0.04);
 }
 
-#statstable tbody tr:nth-child(even) {
+#statstable tbody tr.row-even {
     background: var(--row-alt-light);
 }
 
-body.dark #statstable tbody tr:nth-child(even) {
+body.dark #statstable tbody tr.row-even {
     background: var(--row-alt-dark);
 }
 
